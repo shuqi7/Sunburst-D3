@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html>
+
+<!-- Highchart: Ontario Gross Total Volume by Tree Species -->
+<head>        
+    <title>Sunburst</title>        
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="sunburst.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    <script>
+        d3version3 = d3
+        window.d3 = null
+    </script>                
+    
+
+</head>
+
+    <body>
+        <div class="grid-12">    
+                <div id="treemap-viz"></div>    
+        </div>
+
+        <div class="grid-12"> 
+            <table id="treetable"> 
+            <caption>Tree Species in Ontario</caption>
+            <tbody>
+                <tr>
+                    <th>Category</th>
+                    <th>Species</th>
+                    <th class="td-align-right">Gross total volume (m<sup>3</sup>)</th>
+                </tr>
+                <tr>
+                    <td rowspan="10">Softwoods</td>
+                    <td>White Pine</td>
+                    <td class="td-align-right">209,824,136</td>
+                </tr>
+                <tr>
+                    <td>Red Pine</td>
+                    <td class="td-align-right">54,521,157</td>
+                </tr>
+                <tr>
+                    <td>Jack Pine</td>
+                    <td class="td-align-right">1,021,627,720</td>
+                </tr>
+                <tr>
+                    <td>Black Spruce</td>
+                    <td class="td-align-right">2,387,077,521</td>
+                </tr>
+                <tr>
+                    <td>White Spruce</td>
+                    <td class="td-align-right">147,379,672</td>
+                </tr>
+                <tr>
+                    <td>Baslsam Fir</td>
+                    <td class="td-align-right">311,159,390</td>
+                </tr>
+                <tr>
+                    <td>Cedar</td>
+                    <td class="td-align-right">165,466,433</td>
+                </tr>
+                <tr>
+                    <td>Larch</td>
+                    <td class="td-align-right">106,286,652</td>
+                </tr>
+                <tr>
+                    <td>Hemlock</td>
+                    <td class="td-align-right">49,977,675</td>
+                </tr>
+                <tr>
+                    <td>Other Conifers</td>
+                    <td class="td-align-right">660,322</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Intolerant Hardwoods</td>
+                    <td>Poplar</td>
+                    <td class="td-align-right">1,441,335,809</td>
+                </tr>
+                <tr>
+                    <td>White Birch</td>
+                    <td class="td-align-right">490,682,649</td>
+                </tr>
+                <tr>
+                    <td rowspan="8">Tolerant Hardwoods</td>
+                    <td>Hard Maple</td>
+                    <td class="td-align-right">303,630,908</td>
+                </tr>
+                <tr>    
+                    <td>Soft Maple</td>
+                    <td class="td-align-right">121,583,004</td>
+                </tr>
+                <tr>
+                    <td>Yellow Birch</td>
+                    <td class="td-align-right">67,664,953</td>
+                </tr>
+                <tr>
+                    <td>Ash</td>
+                    <td class="td-align-right">30,022,362</td>
+                </tr>
+                <tr>
+                    <td>Oak</td>
+                    <td class="td-align-right">65,838,283</td>
+                </tr>
+                <tr>
+                    <td>Basswood</td>
+                    <td class="td-align-right">14,407,535</td>
+                </tr>
+                <tr>
+                    <td>Beech</td>
+                    <td class="td-align-right">25,223,823</td>
+                </tr>
+                <tr>
+                    <td>Other Hardwoods</td>
+                    <td class="td-align-right">1,120,347</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                   <td colspan="3">Source: Ministry of Natural Resources and Forestry</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="sunburst.js"></script>
+
+
+</body>
+</html>
