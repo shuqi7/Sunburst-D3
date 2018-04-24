@@ -1,20 +1,10 @@
-div.sunburstTooltip {
-    /*position: absolute;*/
-    text-align: left;
-    padding: 5px;
-    /*background: #eaecef;
-    border: #d7cfcfe0 2px solid;
-    border-radius: 5px;*/
-    pointer-events: none;
-    color: black;
-}
 
+/*------------ CSS styles for Sunburst chart --------------*/
 .sunBurstSection {
     transition: 0.7s;
 }
 
 .sunBurstSection:hover{
-   /*transform: scale(0.95);*/
    fill-opacity:0.6;
 }
 
@@ -24,13 +14,29 @@ div.sunburstTooltip {
 
 .sunBurstSectionText {
     pointer-events: none;
+    font-size: 12px;
 }
 
-.sunburstDiv{
+#sunburstDiv{
      display: block;
      margin:0 auto;
 }
 
+
+/*---------------- CSS Styles for the information display divs----------------*/
+#sunburstSpeciesDiv{
+    text-align:center;
+    font-size: 1.6em;
+    height: 100px;
+}
+
+#sunburstSpeciesDiv div{
+   margin: 10px 0;
+}
+
+
+
+/*---------------- CSS Styles for the Table --------------*/
 #treetable{
     width: 100%;
     background-color: #f6f6f6;
@@ -48,13 +54,6 @@ div.sunburstTooltip {
      padding-bottom: 8px;
 }
 
-
-
-#sunburstSpeciesDiv{
-    text-align:center;
-    font-size: 1.6em;
-    height: 100px;
-}
 
 #treetable caption{
     font-weight: bold;
@@ -84,10 +83,4 @@ div.sunburstTooltip {
     text-align: right;
 }
 
-#percentDiv, #volumeDiv, #nameDiv{
-   margin: 10px 0;
-}
 
-#centre-label{
-   color = #fff;
-}

@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="sunburst.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    <!-- script to make d3 versiton 3 and verstion 4 work in the same page -->
     <script>
         d3version3 = d3
         window.d3 = null
@@ -18,10 +19,11 @@
 </head>
 
     <body>
+        <!-- place where the sunburst will be rendered -->
         <div class="grid-12">    
                 <div id="treemap-viz"></div>    
         </div>
-
+        <!-- Table for the tree species -->
         <div class="grid-12"> 
             <table id="treetable"> 
             <caption>Tree Species in Ontario</caption>
